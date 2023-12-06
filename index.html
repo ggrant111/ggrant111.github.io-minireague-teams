@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minor League Baseball Teams</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="teams-container"></div>
+
+    <div id="team-details" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="parent-team-name"></h2>
+        <img id="parent-team-logo" src="" alt="Team Logo" />
+        <h2>Affliiates</h2>
+        <div id="affiliates-container">
+          <h2>Affliiates</h2>
+        </div>
+      </div>
+    </div>
+    <div id="affiliate-details" class="modal">
+        <div class="modal-content">
+            <span class="close" id="affiliate-close">&times;</span>
+            <h2 id="affiliate-team-name"></h2>
+            <img id="affiliate-team-logo" src="" alt="Affiliate Team Logo">
+            <!-- You can add more divs here for other data points -->
+            <div id="affiliate-info"></div>
+            <div>
+                <label for="season-select">Select Season:</label>
+                <select id="season-select">
+                    <!-- Populate this dropdown with season options -->
+                </select>
+                <button id="load-alumni">Load Alumni</button>
+            </div>
+            <div id="alumni-list"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
